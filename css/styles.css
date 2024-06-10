@@ -1,4 +1,16 @@
-.dropdrown-item {
+body {
 
-    font-family: Georgia, serif;
+    background: url('https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg') rgba(0,0,0,0.3);
+    background-blend-mode: multiply ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 991px){
+    .sidebar {
+
+        background-color: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+    }   
 }
