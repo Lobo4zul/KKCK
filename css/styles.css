@@ -1,19 +1,24 @@
 body {
-  background: url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg")
+  background: linear-gradient(rgba(12, 16, 26, 0.1),rgba(12, 16, 26, 0.1)) ,url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg")
     rgba(255, 255, 255, 0.3);
   background-blend-mode: multiply;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  transition: 4s;
+  
 }
 
-@media (max-width: 991px) {
-  .sidebar {
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-  }
-}
+body:hover {
 
+  background: linear-gradient(rgba(12, 16, 26, 0.75), rgba(5,7,12, 0.75)), url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg")
+  rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .contenedor{
   margin-left: auto;
@@ -22,11 +27,11 @@ body {
 }
 
 .backg{
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(180, 178, 178, 0.4);
   padding: 1%;
   border-radius: 15px;
   backdrop-filter: blur(10px);
-  box-shadow: black 1px 1px 25px;
+  box-shadow: rgb(59, 57, 57) 1px 1px 25px;
 }
 
 .error{
