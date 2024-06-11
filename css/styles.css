@@ -1,6 +1,6 @@
 body {
   background: url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg")
-    rgba(0, 0, 0, 0.3);
+    rgba(255, 255, 255, 0.3);
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
@@ -22,15 +22,22 @@ body {
 }
 
 .backg{
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 1%;
   border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: black 1px 1px 25px;
 }
 
 .error{
   color: red;
+  text-shadow: black 1px 1px 2px;
 }
 
 .flex{
   display: flex;
+}
+
+.texto{
+  text-shadow: black 3px 3px 5px;
 }
