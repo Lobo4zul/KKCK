@@ -1,6 +1,5 @@
 body {
-  background: linear-gradient(rgba(12, 16, 26, 0.1),rgba(12, 16, 26, 0.1)) ,url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg")
-    rgba(255, 255, 255, 0.3);
+  background: linear-gradient(rgba(12, 16, 26, 0.1),rgba(12, 16, 26, 0.1)) ,url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg");
   background-blend-mode: multiply;
   background-position: center center;
   background-size: cover;
@@ -10,11 +9,25 @@ body {
   transition: 4s;
   
 }
+.nav{
 
+  background-color: transparent;
+  transition: 2s;
+  
+  
+}
+.nav:hover { 
+  
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  
+  opacity: 100%;
+
+}
 body:hover {
 
   background: linear-gradient(rgba(12, 16, 26, 0.75), rgba(5,7,12, 0.75)), url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg")
-  rgba(255, 255, 255, 0.3);
+  ;
   backdrop-filter: blur(4px);
   background-size: cover;
   background-attachment: fixed;
