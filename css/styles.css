@@ -20,14 +20,12 @@ body {
   
   background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(5px);
-  
   opacity: 100%;
 
 }
 body:hover {
 
-  background: linear-gradient(rgba(12, 16, 26, 0.75), rgba(5,7,12, 0.75)), url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg")
-  ;
+  background: linear-gradient(rgba(12, 16, 26, 0.4), rgba(5,7,12, 0.4)), url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg");
   backdrop-filter: blur(4px);
   background-size: cover;
   background-attachment: fixed;
