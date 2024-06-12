@@ -1,21 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: linear-gradient(rgba(12, 16, 26, 0.1),rgba(12, 16, 26, 0.1)) ,url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg");
-  background-blend-mode: multiply;
-  background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 100vh;
-  transition: 4s;
+  transition: 3s;
+  font-family: 'roboto', sans-serif;
   
 }
 .nav{
-
   background-color: transparent;
   transition: 2s;
-  
-  
 }
+
 .nav:hover { 
   
   background: rgba(0, 0, 0, 0.75);
@@ -25,10 +26,11 @@ body {
 }
 body:hover {
 
-  background: linear-gradient(rgba(12, 16, 26, 0.4), rgba(5,7,12, 0.4)), url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg");
   backdrop-filter: blur(4px);
-  background-size: cover;
+  background: linear-gradient(rgba(12, 16, 26, 0.4),rgba(12, 16, 26, 0.4)) ,url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg");
   background-attachment: fixed;
+  background-size: cover;
+  
 }
 
 .contenedor{
@@ -61,13 +63,51 @@ body:hover {
 .img1 {
 
 
-  padding-top: 20px;
-  max-height: 300px;
+  margin-top: 20px;
+  max-height: 520px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  border-radius: 15%;
+  
 }
 
-.img2 {
+/*.card { 
 
-  max-height: 300px;
-  padding-top: 20px;
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  /*overflow: hidden;*/
+  /*border: 8px solid #fff;
+  position: relative;
   
+}
+
+/*.card-img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  
+}
+
+/*.card-body {
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: #1f3d4738;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  color: #fff;
+}
+
+/*.card-title {
+
+  color: #fff;  
+  
+
 }
