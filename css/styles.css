@@ -74,13 +74,14 @@ body:hover {
   margin-left: 55px;
   margin-right: 10px;
   padding: 1%;
-  width: 370px;
+  width: fit-content;
   height: 500px;
   overflow: hidden;
   border: 8px solid #fff;
   position: relative;
   align-items: center;
   justify-content: center;
+  text-align: justify;
 }
 
 .card-img {
@@ -175,6 +176,7 @@ body:hover {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  
 }
 .content {
   flex: 1;
@@ -187,6 +189,7 @@ body:hover {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: justify;
+  height: 5000px;
 }
 .content h1, .content h2, .content h3 {
   break-inside: avoid;
