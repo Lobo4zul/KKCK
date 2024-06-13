@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+  min-height: 100%vh;
 }
 
 body {
@@ -16,6 +18,8 @@ body {
 .nav{
   background-color: transparent;
   transition: 2s;
+  
+  border-radius: 0 0 20px 20px
 }
 
 .nav:hover { 
@@ -48,6 +52,7 @@ body:hover {
   border-radius: 15px;
   backdrop-filter: blur(10px);
   box-shadow: rgb(59, 57, 57) 1px 1px 25px;
+  min-height: 100%vh;
 }
 
 .error{
@@ -57,22 +62,13 @@ body:hover {
 
 .flex{
   display: flex;
+  min-height: 100%vh
 }
 
 .texto{
   text-shadow: black 3px 3px 5px;
 }
 
-/*.img1
-
-
-  margin-top: 20px;
-  max-height: 520px;
-  margin-left: 50px;
-  margin-bottom: 30px;
-  border-radius: 15%;
-  
-}*/
 
 .card{ 
 
