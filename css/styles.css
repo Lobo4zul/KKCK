@@ -189,7 +189,6 @@ body:hover {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: justify;
-  height: 5000px;
 }
 .content h1, .content h2, .content h3 {
   break-inside: avoid;
