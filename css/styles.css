@@ -8,32 +8,35 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  
 }
 
 body {
   background: linear-gradient(rgba(12, 16, 26, 0.1), rgba(12, 16, 26, 0.1)),
-    url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg") no-repeat center center fixed;
+  url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
   background-size: cover;
   font-family: "roboto", sans-serif;
   flex: 1;
-  background-attachment: fixed;
   transition: 3s;
-  min-height: 100%vh;
-  font-family: "roboto", sans-serif;
 }
 
 body:hover {
-  backdrop-filter: blur(4px);
   background: linear-gradient(rgba(12, 16, 26, 0.4), rgba(12, 16, 26, 0.4)),
-    url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg");
-  background-attachment: fixed;
+    url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg") no-repeat center center fixed;
+  backdrop-filter: blur(4px);
   background-size: cover;
+  
 }
 
 .nav {
   background-color: transparent;
-  transition: background-color 2s;
+  transition: 2s;
   border-radius: 0 0 20px 20px;
+
 }
 
 .nav:hover {
@@ -64,11 +67,152 @@ body:hover {
 
 .flex {
   display: flex;
+  
 }
 
 .texto {
   text-shadow: black 3px 3px 5px;
 }
+/*BLOG*/
+
+.card {
+  margin-left: 55px;
+  margin-right: 10px;
+  padding: 1%;
+  width: fit-content;
+  height: 500px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(12, 16, 26, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2.5s;
+}
+
+.card:hover .card-body {
+  right: 0;
+}
+
+.card-title {
+  padding: 16px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.card-sub-title {
+  padding: 16px;
+  padding-bottom: 0;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.card-info {
+  padding: 16px;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 20px 0;
+  font-weight: 400;
+  text-align: justify;
+}
+
+#card-btn {
+  color: #fffcfc;
+  background: #146c9b;
+  padding: 10px 20px;
+  margin-left: 16px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  width: 120px;
+}
+.supercontainer {
+  display: flex;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1200px;
+  background-color: #2e2e2e;
+  color: #1e1e1e;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+ /*Blog inside*/
+
+ .content {
+  flex: 1;
+  margin: 3px;
+  column-count: 2;
+  column-gap: 40px;
+  background: #ffffff;
+  color: #2b2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+}
+.content h1,
+.content h2,
+.content h3 {
+  break-inside: avoid;
+  color: #1e1e1e;
+  text-align: justify;
+}
+.content ul.uwu {
+  list-style-type: square;
+  margin-left: 20px;
+  break-inside: avoid;
+}
+.content a {
+  color: #1e1e1e;
+  text-decoration: none;
+  text-align: justify;
+}
+.content a:hover {
+  text-decoration: underline;
+}
+.content hr {
+  border: 0;
+  height: 1px;
+  background: #1e1e1e;
+  margin: 20px 0;
+}
+
 
 /* Footer */
 footer {
@@ -76,12 +220,13 @@ footer {
   color: #fff;
   flex-shrink: 0;
   padding: 1rem 0;
-}
+  }
 
 /* Footer default style */
 footer a {
   text-decoration: none;
   color: #fff;
+  
 }
 
 footer h2 {
@@ -91,12 +236,13 @@ footer h2 {
 footer p {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1rem;
 }
 
 /* Footer Content */
 .footer-content {
   padding: 1rem 2rem;
+  
 }
 
 .footer-content .container {
@@ -105,6 +251,7 @@ footer p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  
 }
 
 /* Contact */
@@ -116,17 +263,17 @@ footer p {
 }
 
 .footer-content .contact .icon {
-  font-size: 24px;
-  margin-right: 5px;
+  font-size: 10px;
+  margin-right: 10px;
 }
 
 .footer-content .social-media-links {
-  margin-top: 1rem;
+  margin-top: 0.1rem;
 }
 
 .footer-content .social-media-links .icon {
-  font-size: 28px;
-  margin-right: 0.5rem;
+  font-size: 55px;
+  margin-right: 1rem;
 }
 
 /* Info */
