@@ -78,6 +78,7 @@ body:hover {
 .card {
   margin-left: 55px;
   margin-right: 10px;
+  margin-top: 10px;
   padding: 1%;
   width: fit-content;
   height: 500px;
@@ -87,6 +88,7 @@ body:hover {
   align-items: center;
   justify-content: center;
   text-align: justify;
+
 }
 
 .card-img {
@@ -160,6 +162,7 @@ body:hover {
 }
 
 .blog-container {
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -179,7 +182,9 @@ body:hover {
   margin: 3px;
   column-count: 2;
   column-gap: 40px;
-  background: #ffffff;
+  background: linear-gradient(rgba(87, 224, 110, 0.15), rgba(206, 145, 241, 0.15)),
+  url("https://i.ibb.co/HxKqFvm/16340656-v798-adj-28.jpg");
+  background-size: cover;
   color: #2b2a2a;
   padding: 20px;
   border-radius: 10px;
