@@ -25,10 +25,7 @@ body {
 }
 
 body:hover {
-  background: linear-gradient(rgba(12, 16, 26, 0.4), rgba(12, 16, 26, 0.4)),
-    url("https://i.ibb.co/WgvSPRT/blue-palette-liquid-ink-background-with-golden-streaks.jpg") no-repeat center center fixed;
-  backdrop-filter: blur(4px);
-  background-size: cover;
+  backdrop-filter: blur(4px); 
   
 }
 
@@ -378,3 +375,47 @@ footer p {
     margin-left: 0;
   }
 }
+
+
+
+.index-img {
+   
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: 5px solid #fff;
+}
+
+.img-index {
+
+  height: 700px;
+  margin-left: 70px;
+  width: 1200px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 5px;
+
+}
+
+.about-us-container {
+
+  background-color: #030303;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 5px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-content {
+
+  text-align: justify;
+  padding: 10px;
+  background: linear-gradient(rgba(87, 224, 110, 0.15), rgba(206, 145, 241, 0.15)),
+  url("https://i.ibb.co/HxKqFvm/16340656-v798-adj-28.jpg");
+  background-size: cover;
+}
+
