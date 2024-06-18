@@ -168,7 +168,7 @@ body {
 
  /*Blog inside*/
 
- .content {
+ .blog-content {
   flex: 1;
   margin: 3px;
   column-count: 2;
@@ -182,27 +182,27 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: justify;
 }
-.content h1,
-.content h2,
-.content h3 {
+.blog-content h1,
+.blog-content h2,
+.blog-content h3 {
   break-inside: avoid;
   color: #1e1e1e;
   text-align: justify;
 }
-.content ul.uwu {
+.blog-content ul.uwu {
   list-style-type: square;
   margin-left: 20px;
   break-inside: avoid;
 }
-.content a {
+.blog-content a {
   color: #1e1e1e;
   text-decoration: none;
   text-align: justify;
 }
-.content a:hover {
+.blog-content a:hover {
   text-decoration: underline;
 }
-.content hr {
+.blog-content hr {
   border: 0;
   height: 1px;
   background: #1e1e1e;
@@ -391,6 +391,7 @@ footer p {
 
 }
 
+/*NOSOTROS*/
 .about-us-container {
 
   background-color: #1f1e1e;
@@ -414,6 +415,7 @@ footer p {
   background-size: cover;
 }
 
+/*TERMS AND CONDICIONES*/
 .terms-container{
 
   background-color: #1f1e1e;
@@ -438,6 +440,8 @@ footer p {
   background-size: cover;
 }
 
+
+/*PRIVACIDAD*/
 .privacy-container {
 
   background-color: #1f1e1e;
