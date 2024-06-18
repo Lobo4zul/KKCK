@@ -466,3 +466,16 @@ footer p {
   background-size: cover;
 
 }
+
+.drop-label {
+
+  margin-top: 8px;
+}
+
+#btn-drop {
+
+  color: #fff;
+  background-color: #146c9b;
+  border-radius: 5px;
+}
+
