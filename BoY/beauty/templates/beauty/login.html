@@ -1,0 +1,38 @@
+{% extends 'beauty/base.html' %}
+
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block content %}
+
+<form action="" method="POST">
+  {% csrf_token%}
+<div class="container mt-3 mb-5 backg" style="max-width: 25%; ">
+  <div class="d-flex justify-content-center">
+    <H5 class="texto" style="color: white;" >LOGIN</H5>
+  </div>
+  <div class="flex">
+    <div class="form-floating mb-3 " style="width: 100%;">
+      <input type="text" name="username" class="form-control" placeholder="Usuario">
+      <label for="nombre">Usuario</label>
+    </div>
+  </div>
+  <div class="form-floating mb-3">
+    <div class="form-floating mb-3" style="width: 100%;">
+      <input type="password" name="password" class="form-control" placeholder="Contraseña">
+      <label for="nombre">Contraseña</label>
+    </div>
+    <div class="d-flex justify-content-center">
+    <button type="submit" class="btn btn-success mx-2" id="registro">Enviar</button>
+    <a href="{% url 'index' %}"><button class="btn btn-danger mr-5">Volver al inicio</button></a>
+  </div>
+  <div class="d-flex justify-content-center mt-2" style="text-shadow: black 0px .2px 2px;">
+    <a href="{% url 'register' %}">No tienes una cuenta? Crea una ahora!</a>
+  </div>
+  </div>
+</div>
+</div>
+</form>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'beauty/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<p style="color: aliceblue;">Bienvenido: {{user.username}}</p>
+
+  <!--Contenido Principal-->
+  <div class="index-img">
+    <img class="img-index" src="{% static 'images/blog/Index/male-personal-shopper-helping-cutomer.jpg' %}">
+  </div>
+  <div class="index-img">
+    <img class="img-index" src="{% static 'images/blog/Index/mock-up-packaging-cosmetic-amenities.jpg' %}">
+  </div>
+  <div class="index-img">
+    <img class="img-index" src="{% static 'images/blog/Index/close-up-happy-woman-holding-hangers.jpg' %}">
+  </div>
+
+
+{% endblock %}

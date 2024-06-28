@@ -1,0 +1,72 @@
+{% extends 'beauty/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<Div class="supercontainer">
+  <div class="card">
+    <img src="{% static 'images/blog/Mujeres/Portada de skin care.jpg' %}" class="card-img">
+    <div class="card-body">
+      <h1 class="card-title text-light">Skin Care</h1>
+      <p class="card-sub-title text-light">Rutinas y Productos Esenciales</p>
+      <p class="card-info text-light">Descubre cómo mantener tu piel radiante a cualquier edad con consejos prácticos,
+        rutinas diarias y productos recomendados para cada tipo de piel.</p>
+      <a class="btn btn-primary" id="card-btn" role="button" href="{% url 'skincare' %}">Ingresar</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'images/blog/Mujeres/Cabello mujer.jpg' %}" class="card-img">
+    <div class="card-body">
+      <h1 class="card-title text-light">Cabello Saludable y Radiante</h1>
+      <p class="card-sub-title text-light">Consejos y Cuidados Esenciales</p>
+      <p class="card-info text-light">Transforma tu cabello con nuestra guía esencial de productos, cuidados y
+        estilizado. ¡Descubre los secretos para un cabello perfecto!</p>
+      <a class="btn btn-primary" id="card-btn" role="button" href="{% url 'cuidado_cabello' %}">Ingresar</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'images/blog/Mujeres/Cabello afro mujer.jpeg' %}" class="card-img">
+    <div class="card-body">
+      <h1 class="card-title text-light">Cabello Rizado, Ondulado o Afro</h1>
+      <p class="card-sub-title text-light">Guía de consejos y cuidados</p>
+      <p class="card-info text-light">Descubre como cuidar y darle vida a tu cabello crespo o afro con nuestra guía
+        especializada.</p>
+      <a class="btn btn-primary" id="card-btn" role="button" href="{% url 'cabello_afro' %}">Ingresar</a>
+    </div>
+  </div>
+</Div>
+<Div class="supercontainer mt-5 mb-5">
+  <div class="card">
+    <img src="{% static 'images/blog/Mujeres/estilo mujer.jpg' %}" class="card-img">
+    <div class="card-body">
+      <h1 class="card-title text-light">Puro Estilo y Tendencia</h1>
+      <p class="card-sub-title text-light">Temporada Pimavera-Verano</p>
+      <p class="card-info text-light">Te invitamos a conocer lo último en estilo y te aconsejamos como lucirte en esta
+        temporada.</p>
+      <a class="btn btn-primary" id="card-btn" role="button" href="{% url 'primavera_verano' %}">Ingresar</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'images/blog/Mujeres/Mujer ejecutiva 2.jpg' %}" class="card-img">
+    <div class="card-body">
+      <h1 class="card-title text-light">Moda en la Oficina</h1>
+      <p class="card-sub-title text-light">Saca tu Mejor Versión</p>
+      <p class="card-info text-light">Descubre tu estilo propio y hazlo relucir en tu trabajo, oficina o terreno y
+        alcanza tu nueva mejor versión</p>
+      <a class="btn btn-primary" id="card-btn" role="button" href="{% url 'oficina' %}">Ingresar</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'images/blog/Mujeres/Mujer ciudad.jpeg' %}" class="card-img">
+    <div class="card-body">
+      <h1 class="card-title text-light">Actitud Por Sobre Todo</h1>
+      <p class="card-sub-title text-light">Hay que creer para ver</p>
+      <p class="card-info text-light">Conoce lo último en tendencia: Actitud. Y descubre cuán importante es y como
+        implementarlo en tu día a día.</p>
+      <a class="btn btn-primary" id="card-btn" role="button" href="{% url 'actitud' %}">Ingresar</a>
+    </div>
+  </div>
+</Div>
+
+
+{% endblock %}
