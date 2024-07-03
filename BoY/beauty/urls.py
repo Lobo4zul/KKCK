@@ -14,5 +14,7 @@ urlpatterns = [
     path('primavera-verano/', views.primavera_verano, name='primavera_verano'),
     path('skincare/', views.skincare, name='skincare'),
     path('login/', views.login_view, name='login'),
-    path('register/', views.register, name='register')
+    path('register/', views.register, name='register'),
+    path('resena/', views.resena, name='resena'),
+
 ]

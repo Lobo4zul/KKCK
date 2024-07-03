@@ -91,3 +91,6 @@ def primavera_verano(request):
 
 def skincare(request):
     return render(request, 'beauty/blogs/skinCare.html')
+
+def resena(request):
+    return render(request, 'beauty/reseña.html')

@@ -1,113 +1,109 @@
-<!DOCTYPE html>
-<html lang="spa">
+{% extends 'beauty/base.html' %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <title>Index</title>
-</head>
+{% load static %}
 
-<body class="vh-100 overflow-scroll">
+{% block content %}
 
-
-  <!--Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark pt-0">
-    <div class="nav container">
-      <!-- Logo -->
-      <img src="IMG/formulario/Logo.png" height="65px" width="65px">
-      <a class="navbar-brand fs-4 mx-2" href="index.html">Beauty on you</a>
-      <!--Toggle btn-->
-      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-      </button>
-
-      <!--SideBar-->
-      <div class="sidebar offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel">
-        <!--Sidebar Header-->
-        <div class="offcanvas-header text-white border-bottom">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Categorías</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <div class="container" style="color: white;">
+    <h1 class="d-flex justify-content-center">Reseñas</h1>
+  </div>
+  
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/resena/resena1.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title ">Macarena Farias</h5>
+          <button type="button" class="btn btn-outline-primary btn-sm">Like</button>
+          <p class="card-text">"Me encanta esta app. Siempre he tenido problemas para encontrar consejos de moda que 
+                                realmente se adapten a mis características personales. Con esta app, puedo seleccionar mi color de
+                                 ojos, piel y cabello, ¡y los consejos son fantásticos! Además, los blogs son muy informativos y las reseñas
+                                  de otros usuarios me han ayudado a sacarle el máximo provecho. ¡El diseño es hermoso y muy fácil de usar!".</p>
         </div>
-        <!--Sidebar Body-->
-        <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-          <ul class="navbar-nav justify-content-center aling-items-center fs-5 flex-grow-1 pe-3">
-            <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
-            </li>
-            <!--Campos Sidebar-->
-            <li class="nav-item mx-2">
-              <a class="nav-link active" href="reseña.html">Reseñas</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link active" href="nosotros.html">Nosotros</a>
-            </li>
-          </ul>
-          <a href="login.html"><button class="btn btn-warning px-4">Login</button></a>
-          <a href="formulario.html"><button class="btn btn-primary mx-3">Iniciar Proceso</button></a>
-
+        <div class="card-footer">
+          <small class="text-body-secondary">Ultima actualizacion hace 2 dias</small>
         </div>
       </div>
     </div>
-    </div>
-  </nav>
-
-  <footer>
-    <!--Footer content-->
-    <div class="footer-content">
-      <div class="container">
-        <!--Contact-->
-        <div class="col contact">
-          <p><a href="index.html" class="logo">Beauty on You</a></p>
-          <p><ion-icon name="compass-outline"></ion-icon>Piso 23, Torre B, Las Condes, Costanera Sur 2730, Las Condes,
-            Santiago</p>
-          <p><ion-icon name="mail"></ion-icon><a href="mailto:example@gmail.com">example@gmail.com</a></p>
-          <p><ion-icon name="call"></ion-icon>800 386 800</p>
-          <!--Social Links-->
-          <div class="social-media-links">
-            <a href="http://facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="http://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="https://x.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-          </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/resena/resena2.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pamela Perez</h5>
+          <button type="button" class="btn btn-outline-primary btn-sm">Like</button>
+          <p class="card-text">"¡Una app fantástica! Siempre he querido personalizar mi estilo y esta app lo hace muy fácil.
+                                 El proceso de selección de características es sencillo y los consejos son realmente acertados.
+                                  Además, los blogs me han dado mucha inspiración. Me encanta que puedo leer reseñas de otros usuarios y el diseño 
+                                  es simplemente encantador."</p>
         </div>
-        <!-- Info-->
-        <div class="col info">
-          <h2>Info</h2>
-          <p><a href="nosotros.html">Nosotros</a></p>
-          <p><a href="terminosyCondiciones.html">Términos y condiciones</a></p>
-          <p><a href="/privacidad-politicas.html">Privacidad y políticas</a></p>
-        </div>
-        <!--Newsletter-->
-        <div class="col newsletter">
-          <h2>Suscríbete a nuestro Newsletter</h2>
-          <form action="" class="newsletter-form">
-            <input type="text" placeholder="Email">
-            <button>Suscríbete</button>
-          </form>
+        <div class="card-footer">
+          <small class="text-body-secondary">Ultima actualizacion hace 3 minutos</small>
         </div>
       </div>
     </div>
-    <!--Footer copy-->
-    <div class="footer-copyright">
-      Copyright&copy;2024 Beauty on You
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/resena/resena3.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pablo Godoy</h5>
+          <button type="button" class="btn btn-outline-primary btn-sm">Like</button>
+          <p class="card-text">"Esta app ha sido una gran ayuda para mí. Nunca he sido muy bueno con la moda, pero con esta herramienta 
+                                puedo obtener consejos personalizados que realmente se adaptan a mi estilo. Me encanta que pueda seleccionar
+                                 mis características como la barba y los cortes especiales. Los blogs son muy interesantes y siempre encuentro algo útil. 
+                                 El diseño es limpio y fácil de navegar.".</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Ultima actualizacion hace 1 semana</small>
+        </div>
+      </div>
     </div>
-  </footer>
+  </div>
 
-  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-
-
-
-</body>
-
-</html>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/resena/resena4.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sofia Gonzales</h5>
+          <button type="button" class="btn btn-outline-primary btn-sm">Like</button>
+          <p class="card-text">"Esta app es muy innovadora y útil para personalizar nuestro look. El diseño es hermoso y fácil de usar, lo cual es un gran plus.
+                                  Sin embargo, creo que la sección de reseñas podría ser más interactiva, permitiendo a los usuarios responder a los 
+                                  comentarios de otros. Además,sería genial si hubiera una función de recomendaciones de productos basadas en nuestros perfiles.".</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Ultima actualizacion hace 1 mes</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/resena/resena5.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sebastian Donoso</h5>
+          <button type="button" class="btn btn-outline-primary btn-sm">Like</button>
+          <p class="card-text">"Estoy realmente impresionado con esta app. Los consejos personalizados me han ayudado a mejorar
+                                 mi estilo de una manera que nunca pensé posible. Los blogs son muy inspiradores y me encanta leer 
+                                 las reseñas de otros usuarios. El diseño es moderno y fácil de navegar, lo cual hace que la experiencia sea muy agradable.".</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Ultima actualizacion hace 12 horas</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/resena/resena6.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Clarck Flores</h5>
+          <button type="button" class="btn btn-outline-primary btn-sm">Like</button>
+          <p class="card-text"> "¡Fantástica app! He probado muchas aplicaciones de moda antes, pero ninguna ha sido tan precisa y útil como esta.
+                                 Los consejos basados en mis características son muy acertados y los blogs siempre tienen algo interesante que ofrecer.
+                                  El diseño es limpio y muy atractivo. Definitivamente la recomendaré a mis amigos.".</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Ultima actualizacion hace 7 dias</small>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
