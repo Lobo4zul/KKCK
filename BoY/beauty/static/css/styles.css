@@ -479,3 +479,58 @@ footer p {
   border-radius: 5px;
 }
 
+/*Card Reseñas*/
+
+
+.reseña-card:hover .card-body {
+  right: 0;
+}
+
+.reseña-card-title {
+  padding: 16px;
+  margin-top: 10px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+}
+
+.reseña-card-text {
+  padding: 16px;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 20px 0;
+  font-weight: 400;
+  text-align: justify;
+  align-items: center;
+  color: #fffcfc;
+  text-shadow: 1px 1px 2px black;
+
+}
+
+.reseña-btn {
+  color: #fffcfc;
+  background: #146c9b;
+  padding: 10px 20px;
+  margin-left: 16px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  width: 120px;
+}
+
+.reseña-btn:hover {
+
+  background: #0a5177;
+}
+
+.reseña-btn:focus {
+
+  background: #098a49;
+}
