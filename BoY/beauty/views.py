@@ -94,3 +94,13 @@ def skincare(request):
 
 def resena(request):
     return render(request, 'beauty/reseña.html')
+
+def pielesOscuras(request):
+    return render(request, 'beauty/blogs/pielesOscuras.html')
+
+def pielesMedias(request):
+    return render(request, 'beauty/blogs/pielesMedias.html')
+
+def pielesClaras(request):
+    return render(request, 'beauty/blogs/pielesClaras.html')
+
